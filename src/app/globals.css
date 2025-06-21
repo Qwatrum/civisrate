@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #29293b;
+  --foreground: #ededed;
+  --font-main: ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+  --hover-color: #E1CE7A;
+  --large-hover-color: #315C2B;
 }
 
 @theme inline {
@@ -10,17 +13,62 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+header {
+  background: var(--background);
+}
+
+footer {
+  background: var(--color-slate-900);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+}
+
+
+.hover-custom {
+  color: var(--hover-color);
+  font-weight: bold;
+}
+
+.hover-custom:hover {
+  text-decoration: underline;
+}
+
+
+.hover-credits {
+  color: var(--hover-color);
+}
+
+.hover-credits:hover {
+  text-decoration: underline;
+}
+
+
+.main-font {
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.larger-font {
+  font-size: larger;
+  color: var(--hover-color);
+}
+
+.browse-font {
+  font-size: larger;
+}
+
+
+.heading {
+  font-size: 3rem;
+  margin-left: 10px;
 }
