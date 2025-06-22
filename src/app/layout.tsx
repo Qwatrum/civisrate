@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "./components/navigation";
 import Footer from "./components/footer";
+import CivisRateImage from "./components/civis_rate_image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
          
         <header className="header text-white p-4 text-center">
           <Navigation/>
+          <CivisRateImage/>
         </header>
         {children}
 
