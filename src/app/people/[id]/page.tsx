@@ -1,7 +1,7 @@
+import React from "react";
 import Comments from "../../components/comments";
 import Rating from "../../components/rating";
 import peopleData from "../../data";
-
 
 export default async function Person({params}: { params: {id:string}}) {
     
@@ -47,7 +47,7 @@ return (
 
     
         
-        <div className="p-10 rounded-4xl w-5xl text-white border border-white backdrop-blur-2xl backdrop-brightness-75 mt-35">
+        <div className="p-10 rounded-4xl w-5xl text-white border border-white backdrop-blur-2xl backdrop-brightness-75 mt-50">
         <div><h1 className="name main-font">{person.name}</h1></div>
         <h1 className="text-3xl font-bold mb-1">
             <Rating>{((person.ratings.reduce((a, b) => a + b, 0)) / person.ratings.length).toFixed(2)}</Rating>
@@ -58,13 +58,21 @@ return (
           <ul>
             <li className="main-font">{person.bio}</li>
             <li className="main-font">Link: <a href={person.links[0]} target="_blank" className="hover-credits">{person.links[0]}</a></li>
+            <li className="main-font">Tags: {" "}
+              {person.tags.map((tag, index) => (
+                <React.Fragment key={index}>
+                  {tag}
+                  {index < person.tags.length -1 && ", "}
+                </React.Fragment>
+              ))}
+            </li>
             
             </ul>
 
         </div>
 
 
-        <div className="p-10 rounded-4xl w-5xl text-white border border-white backdrop-blur-2xl backdrop-brightness-75 mt-60">
+        <div className="p-10 rounded-4xl w-5xl text-white border border-white backdrop-blur-2xl backdrop-brightness-75 mt-65">
           
         <h1 className="text-3xl font-bold">Comments</h1>
           <ul>

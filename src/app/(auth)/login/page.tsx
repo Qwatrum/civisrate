@@ -7,7 +7,7 @@ export default function Login() {
     return (
       
         <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <h1 className="text-4xl font-bold mb-8">Login</h1>
+      <h1 className="main-font text-4xl font-bold mb-8">Login</h1>
       
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center">
         <button onClick={() => router.push("/")} className="rounded-full border border-solid border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#1a101a] hover:border-transparent hover:cursor-pointer font-medium main-font text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[128px]">Login</button>
