@@ -1,6 +1,8 @@
 "use client";
 import { useRouter } from "next/navigation";
 import peopleData from "../data";
+import SearchBar from "../components/search_bar";
+import SearchBarTags from "../components/search_bar_tags";
 
 export default function People() {
     const router = useRouter();
@@ -14,6 +16,8 @@ export default function People() {
         <div className="p-10 rounded-4xl w-6xl text-white border border-white backdrop-blur-2xl backdrop-brightness-75">
         
             <h2 className="main-font text-3xl font-bold mb-8">Search:</h2>
+              <SearchBar data={peopleData} /> <br></br>
+              <SearchBarTags data={peopleData} /> <br></br>
           
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
