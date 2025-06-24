@@ -10,7 +10,7 @@
 - And leave your own rankings!
 - #### Visit the website [here](https://civisrate.vercel.app)
 
-> ![IMPORTANT]
+> [!IMPORTANT]
 > The website is still in development
 - There are still many features to code. For example the account system. At the moment the website is just a demo. But further things will be added like:
     - Account system
