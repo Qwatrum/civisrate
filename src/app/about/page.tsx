@@ -11,11 +11,19 @@ export default function About() {
         
         <div className="p-10 rounded-4xl w-6xl text-white border border-white backdrop-blur-2xl backdrop-brightness-75">
           <ul>
-            <li className="main-font">CivisRate is still in development. Many features are still yet to code. The code is open source <a href="https://github.com/qwatrum/civisrate" target="_blank" className="hover-credits">here</a>.</li>
+            <li className="main-font"><strong>CivisRate is still in development.</strong> Many features are still yet to code. The code is open source <a href="https://github.com/qwatrum/civisrate" target="_blank" className="hover-credits">here</a>.</li>
+        </ul>
+        <h1 className="text-3xl font-bold mb-5 mt-10">Plans for the future</h1>
+          <ul>
+            <li className="main-font">Login and account system</li>
+            <li className="main-font">Real possibility to rate</li>
+            <li className="main-font">Overview how the rating changed over time</li>
+            <li className="main-font">MORE people</li>
         </ul>
         <h1 className="text-3xl font-bold mb-5 mt-10">Credits</h1>
           <ul>
             <li className="main-font">Made by <a href="https://github.com/qwatrum" target="_blank" className="hover-credits">Qwatrum</a> 2025.</li>
+            <li className="main-font">CivisRate logo made using <a href="https://cooltext.com/" target="_blank" className="hover-credits">CoolText</a>.</li>
         </ul>
 
         <h1 className="text-3xl font-bold mb-5 mt-10">Contribute</h1>

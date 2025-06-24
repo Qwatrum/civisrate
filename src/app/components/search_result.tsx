@@ -25,7 +25,7 @@ export const Result = ({ data }: dataProps) => {
             {data.map(person => (
 
                 <div key={person.id}>
-                    <h3 className="font-bold main-font"><a href={person.url} className="text-blue-300 underline main-font">{person.name}</a></h3>
+                    <h3 className="font-bold main-font"><a href={"people/"+person.url} className="text-blue-300 underline main-font">{person.name}</a></h3>
                     
                     <div>
                         <strong className="main-font">{((person.ratings.reduce((a, b) => a + b, 0)) / person.ratings.length).toFixed(2)} Stars</strong>
