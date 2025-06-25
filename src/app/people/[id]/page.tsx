@@ -8,7 +8,7 @@ export default async function Person({params}: { params: {id:string}}) {
     const people = peopleData;
 
 
-    const { id } = await params;
+    const { id } = params;
     const person = people.find(p => p.url === id)
     if (!person) {
         return(
