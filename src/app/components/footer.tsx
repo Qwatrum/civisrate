@@ -1,9 +1,6 @@
 import { ReactNode } from "react";
 
-type FooterProps = {
-    children: ReactNode;
-};
 
-export default function Footer({ children }: FooterProps) {
+export default function Footer({ children }: { children: React.ReactNode}) {
     return <a className="p-2 hover-custom footer" href="https://github.com/qwatrum" target="_blank">{children}</a>;
 }
