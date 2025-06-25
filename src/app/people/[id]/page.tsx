@@ -3,7 +3,7 @@ import Comments from "../../components/comments";
 import Rating from "../../components/rating";
 import peopleData from "../../data";
 
-export default async function Person({params}: { params: {id:string}}) {
+export default function Person({ params }: { params: { id: string } }) {
     
     const people = peopleData;
 
@@ -108,4 +108,3 @@ return (
     </div>
 )
 }
-    
