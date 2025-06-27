@@ -52,7 +52,7 @@ return (
         <h1 className="text-3xl font-bold mb-1">
             <Rating>{((person.ratings.reduce((a, b) => a + b, 0)) / person.ratings.length).toFixed(2)}</Rating>
         </h1>
-        <p className="main-font mb-7">({person.ratings.length} reviews)</p>
+        {/* <p className="main-font mb-7">({person.ratings.length} reviews)</p> */}
 
         <h1 className="text-3xl font-bold mb-4">Bio</h1>
           <ul>

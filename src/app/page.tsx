@@ -16,7 +16,7 @@ export default function Home() {
           
           <h1 className="text-3xl font-bold mb-5">Welcome to CivisRate</h1>
           <ul>
-            <li className="main-font">CivisRate is a platform where everyone can give famous people a <strong>1 to 5 star</strong> ranking.<br></br><br></br>Don't you sometimes find yourself curious about the reputation of certain celebrities - what others truly think of them?</li>
+            <li className="main-font">CivisRate is a platform where the favorability of celebrities is shown with a <strong>1 to 5 star</strong> ranking.<br></br><br></br>The current data is collected from statistics and surveys. In the future people will have the possibility to cast <strong>their</strong> own ranking here.</li>
             <li className="main-font"></li>
         </ul>
           
