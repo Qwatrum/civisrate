@@ -2,11 +2,16 @@
 import { useState, useEffect } from "react";
 
 type Comment = {
-    post_id: number;
     id: number;
-    name: string;
-    email: string;
     body: string;
+    postid: number;
+    likes: number;
+    user: {
+        id: number;
+        username: string;
+        fullName: string;
+    };
+   
 
 };
 
@@ -18,11 +23,11 @@ export default function Comments() {
         async function fetchComments() {
             try {
                 const response = await fetch(
-                    "https://jsonplaceholder.typicode.com/comments"
+                    "https://dummyjson.com/comments"
                 );
                 if (!response.ok) throw new Error("Failed to fetch comments.");
                 const data = await response.json();
-                setComments(data);
+                setComments(data.comments);
             } catch (err) {
                 setError("Failed to fetch.");
                 if (err instanceof Error) {
@@ -46,7 +51,7 @@ export default function Comments() {
                 key={comment.id}
                 className="p-4 bg-white shadow-md rounded-lg text-gray-700 main-font"
             >
-                <strong>{comment.email}</strong>: {comment.body} 
+                <strong>{comment.user.username}</strong>: {comment.body} 
             </li>
             ))}
         </ul>
